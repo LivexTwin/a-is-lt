@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Anthony Molina • LIVEXTWIN</title>
+
+    <meta
+      name="description"
+      content="Anthony Molina is a visual artist and developer creating images, interfaces, websites, and experimental digital work."
+    />
+    <meta name="author" content="Anthony Molina" />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#09091a" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Anthony Molina • LIVEXTWIN" />
+    <meta
+      property="og:description"
+      content="Visual artist and developer creating images, interfaces, websites, and experimental digital work."
+    />
+    <meta property="og:url" content="https://a-is-lt.com/" />
+    <meta property="og:site_name" content="LIVEXTWIN" />
+    <meta
+      property="og:image"
+      content="https://a-is-lt.com/assets/og-image.jpg"
+    />
+    <meta property="og:image:alt" content="LIVEXTWIN • Anthony Molina" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Anthony Molina • LIVEXTWIN" />
+    <meta
+      name="twitter:description"
+      content="Visual artist and developer creating images, interfaces, websites, and experimental digital work."
+    />
+    <meta
+      name="twitter:image"
+      content="https://a-is-lt.com/assets/og-image.jpg"
+    />
+
+    <link rel="canonical" href="https://a-is-lt.com/" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik+Mono+One&family=Space+Mono:wght@400;700&family=Syne:wght@700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- Ambient atmosphere -->
+    <div class="orb orb-one" aria-hidden="true"></div>
+    <div class="orb orb-two" aria-hidden="true"></div>
+    <div class="grain" aria-hidden="true"></div>
+
+    <main class="flash-canvas" id="top">
+      <!-- Header -->
+      <header class="site-header">
+        <a href="#top" class="site-mark" aria-label="LIVEXTWIN home">
+          <span class="site-dot" aria-hidden="true"></span>
+          <span>anthony <span class="bullet">•</span> molina</span>
+        </a>
+        <a href="mailto:hello@a-is-lt.com" class="contact-link">
+          CONTACT <span aria-hidden="true">↗</span>
+        </a>
+      </header>
+
+      <!-- Palette switch -->
+      <button
+        class="lt-star"
+        id="ltStar"
+        type="button"
+        aria-label="Change visual state"
+        aria-pressed="false"
+      >
+        <svg viewBox="0 0 100 100" aria-hidden="true">
+          <polygon
+            class="star-shape"
+            points="50,2 58,35 95,25 68,50 95,75 58,65 50,98 42,65 5,75 32,50 5,25 42,35"
+          />
+          <circle class="star-dot" cx="50" cy="50" r="2.8" />
+        </svg>
+      </button>
+
+      <!-- Loose visual fragments -->
+      <div class="loose-note note-one">visual artist</div>
+      <div class="loose-note note-two">drawing / code / culture</div>
+      <div class="loose-note note-three">atlanta, ga</div>
+
+      <!-- Background graphics -->
+      <div class="shadow-shape" aria-hidden="true">
+        <div class="shadow-halftone"></div>
+      </div>
+
+      <div class="graphic-fragment fragment-one" aria-hidden="true"></div>
+      <div class="graphic-fragment fragment-two" aria-hidden="true"></div>
+
+      <!-- Hero -->
+      <section class="hero" aria-labelledby="wordmark">
+        <!-- Portrait: desktop overlay, mobile stacked -->
+        <div class="portrait-card">
+          <div class="portrait-halftone" aria-hidden="true"></div>
+
+          <div class="portrait-inner">
+            <span class="portrait-label">IMAGE</span>
+
+            <div class="portrait-placeholder">
+              <img
+                src="assets/portrait.webp"
+                alt="Portrait of Anthony Molina"
+                fetchpriority="high"
+              />
+            </div>
+          </div>
+        </div>
+
+        <!-- Main identity -->
+        <div class="hero-copy">
+          <p class="welcome">welcome to my corner of the internet</p>
+
+          <h1 class="wordmark" id="wordmark">
+            LIVEXTWIN
+            <span class="wordmark-offset" aria-hidden="true">LIVEXTWIN</span>
+          </h1>
+
+          <p class="description">
+            I make images, interfaces, websites, objects, and other things that
+            usually start with a weird idea.
+          </p>
+
+          <div class="hero-links">
+            <a
+              href="https://vlslab.org"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="practice-link"
+            >
+              <span>currently making things at</span>
+              <strong>VLSLAB <i aria-hidden="true">↗</i></strong>
+            </a>
+
+            <a
+              href="https://github.com/LivexTwin"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="github-link"
+            >
+              <span class="github-mark" aria-hidden="true">
+                <img src="assets/github-mark.svg" alt="" />
+              </span>
+
+              <span class="github-label">GitHub</span>
+
+              <strong>@LivexTwin <i aria-hidden="true">↗</i></strong>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Lower statement -->
+      <div class="lower-statement">
+        somewhere between
+        <strong>art</strong>, <strong>music</strong>,
+        <strong>code</strong>
+        and everything I grew up looking at.
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer" id="contact">
+      <div class="footer-copy">
+        <p>This is a personal site. Everything else lives elsewhere.</p>
+      </div>
+
+      <a href="#top" class="back-top">BACK TO TOP ↑</a>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
